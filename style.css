@@ -1,0 +1,145 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+body {
+  background-color: #000504;
+}
+.head {
+  height: 10vh;
+  width: 100%;
+  background: linear-gradient(120deg, #2cd8c1, #7d07ab);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  border-radius: 5px;
+  color: #d8fdf8;
+  text-align: center;
+  line-height: 10vh;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: calc(30px);
+}
+
+.main_box {
+  height: 40vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  margin-top: 20px;
+}
+
+.img {
+  height: 35vh;
+  width: 20vw;
+  border-radius: 50%;
+  background-color: #2cd8c1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 50ms ease-in-out;
+}
+.img:hover {
+  opacity: calc(0.8);
+  border: 5px solid #0e9a87;
+  cursor: pointer;
+  transform: scale(1.09);
+}
+
+.counts {
+  background-color: #000504;
+  color: #d8fdf8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5vh;
+  gap: 20px;
+  font-size: 1.5rem;
+  text-align: center;
+}
+.button {
+  height: 8dvh;
+  width: 6.5dvw;
+  font-size: 2.5rem;
+  background-color: #7d07ab;
+  border-radius: 10px;
+  color: #d8fdf8;
+  text-align: center;
+  line-height: 8dvh;
+  font-weight: 700;
+}
+.msgcntr {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+}
+.msg {
+  color: #d8fdf8;
+  padding: 1rem;
+  background-color: #230585;
+  font-size: 1.7rem;
+  display: inline;
+  border-radius: 10px;
+}
+.hide {
+  background-color: #000504;
+}
+.btn {
+  height: 7vh;
+  width: 9vw;
+  border-radius: 10px;
+  font-size: calc(20px);
+  font-weight: 500;
+  background-color: #09f1ce;
+}
+.Reset {
+  position: relative;
+  top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (max-width: 600px) {
+  .main_box {
+    height: 32vh;
+    gap: 10px;
+    margin-top: 20px;
+  }
+  .img {
+    height: 15vh;
+    width: 30vw;
+  }
+  .img:hover {
+    opacity: calc(0.8);
+    border: 5px solid #160213;
+    cursor: pointer;
+    transform: scale(1.09);
+  }
+  .rck,
+  .ppr,
+  .scr {
+    height: 10vh;
+    width: 10vh;
+  }
+  .button {
+    position: relative;
+    height: 8dvh;
+    width: 16.5dvw;
+    left: 20px;
+  }
+  .msgcntr {
+    width: 90%;
+    position: relative;
+    left: 20px;
+    margin: 50px 0 0 0;
+  }
+  .head {
+    font-size: calc(16px);
+  }
+  .btn {
+    height: 6vh;
+    width: 30vw;
+  }
+}
